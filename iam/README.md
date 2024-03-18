@@ -102,7 +102,7 @@ public class Sample {
 
 ```java
 import com.nutanix.iam.java.client.ApiClient;
-import com.nutanix.iam.java.client.api.CertAuthProviderApi;
+import com.nutanix.iam.java.client.api.CertificateAuthenticationProvidersApi;
 import com.nutanix.dp1.iam.iam.v4.authn.GetCertAuthProviderApiResponse;
 
 public class Sample {
@@ -110,9 +110,9 @@ public class Sample {
     ApiClient client = new ApiClient();
     // Configure the client
     // ...
-    CertAuthProviderApi certAuthProviderApi = new CertAuthProviderApi(client);
-    String extId = "aB2472Bf-dcD6-A7B0-2eb4-DA8AcA9AAE7B";
-    GetCertAuthProviderApiResponse getCertAuthProviderApiResponse = certAuthProviderApi.HandleGetCertAuthProvider(extId);
+    CertificateAuthenticationProvidersApi certificateAuthenticationProvidersApi = new CertificateAuthenticationProvidersApi(client);
+    String extId = "CecC7FDe-d2Ce-7DEB-aDF1-beeD6f3De6Ba";
+    GetCertAuthProviderApiResponse getCertAuthProviderApiResponse = certificateAuthenticationProvidersApi.getCertAuthProviderById(extId);
   }
 }
 ```
@@ -146,9 +146,9 @@ public class Sample {
     // Configure the client
     // ...
     // perform GET call
-    CertAuthProviderApi certAuthProviderApi = new CertAuthProviderApi(client);
-    String extId = "aB2472Bf-dcD6-A7B0-2eb4-DA8AcA9AAE7B";
-    GetCertAuthProviderApiResponse getCertAuthProviderApiResponse = certAuthProviderApi.HandleGetCertAuthProvider(extId);
+    CertificateAuthenticationProvidersApi certificateAuthenticationProvidersApi = new CertificateAuthenticationProvidersApi(client);
+    String extId = "CecC7FDe-d2Ce-7DEB-aDF1-beeD6f3De6Ba";
+    GetCertAuthProviderApiResponse getCertAuthProviderApiResponse = certificateAuthenticationProvidersApi.getCertAuthProviderById(extId);
     // Extract E-Tag Header
     final String eTagHeader = ApiClient.getEtag(getCertAuthProviderApiResponse);
     // ...
@@ -157,7 +157,7 @@ public class Sample {
     // initialize/change parameters for update
     HashMap<String, Object> opts = new HashMap<>();
     opts.put("If-Match", eTagHeader);
-    certAuthProviderApi.HandleUpdateCertAuthProvider(certAuthProviderextId, , opts);
+    certificateAuthenticationProvidersApi.updateCertAuthProviderById(certAuthProviderextId, , opts);
   }
 }
 
@@ -178,19 +178,19 @@ List Operations for Nutanix APIs support pagination, filtering, sorting and proj
 List Options can be passed to list operations in order to perform pagination, filtering etc.
 ```java
 import com.nutanix.iam.java.client.ApiClient;
-import com.nutanix.iam.java.client.api.CertAuthProviderApi;
-import com.nutanix.dp1.iam.iam.v4.authn.ListCertAuthProviderApiResponse;
+import com.nutanix.iam.java.client.api.CertificateAuthenticationProvidersApi;
+import com.nutanix.dp1.iam.iam.v4.authn.ListCertAuthProvidersApiResponse;
 
 public class Sample {
   public void performOperation() {
     ApiClient client = new ApiClient();
     // Configure the client
     // ...
-    CertAuthProviderApi certAuthProviderApi = new CertAuthProviderApi(client);
+    CertificateAuthenticationProvidersApi certificateAuthenticationProvidersApi = new CertificateAuthenticationProvidersApi(client);
     String null = "string_sample_data";
     String null = "string_sample_data";
     String null = "string_sample_data";
-    ListCertAuthProviderApiResponse listCertAuthProviderApiResponse = certAuthProviderApi.HandleListCertAuthProviders(null, null, null);
+    ListCertAuthProvidersApiResponse listCertAuthProvidersApiResponse = certificateAuthenticationProvidersApi.listCertAuthProviders(null, null, null);
   }
 }
 ```
