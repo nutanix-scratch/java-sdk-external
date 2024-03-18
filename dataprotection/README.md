@@ -111,7 +111,7 @@ public class Sample {
     // Configure the client
     // ...
     ConsistencyGroupsApi consistencyGroupsApi = new ConsistencyGroupsApi(client);
-    String extId = "ed2DcAfb-6F2D-Ba3b-aCCc-FbeA992Bfec1";
+    String extId = "1ECCdAFa-bbEb-AD5c-d6b2-f3ee7DfaBfCa";
     GetConsistencyGroupApiResponse getConsistencyGroupApiResponse = consistencyGroupsApi.getConsistencyGroupById(extId);
   }
 }
@@ -147,7 +147,7 @@ public class Sample {
     // ...
     // perform GET call
     ConsistencyGroupsApi consistencyGroupsApi = new ConsistencyGroupsApi(client);
-    String extId = "ed2DcAfb-6F2D-Ba3b-aCCc-FbeA992Bfec1";
+    String extId = "1ECCdAFa-bbEb-AD5c-d6b2-f3ee7DfaBfCa";
     GetConsistencyGroupApiResponse getConsistencyGroupApiResponse = consistencyGroupsApi.getConsistencyGroupById(extId);
     // Extract E-Tag Header
     final String eTagHeader = ApiClient.getEtag(getConsistencyGroupApiResponse);
