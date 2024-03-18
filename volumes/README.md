@@ -111,7 +111,7 @@ public class Sample {
     // Configure the client
     // ...
     IscsiClientsApi iscsiClientsApi = new IscsiClientsApi(client);
-    String extId = "8BBccb54-C03c-bE0D-fC35-fFeA3FAdBBaC";
+    String extId = "DEBE6fFd-4ACA-5ACe-AccB-8f7dEe20CEaC";
     GetIscsiClientApiResponse getIscsiClientApiResponse = iscsiClientsApi.getIscsiClientById(extId);
   }
 }
