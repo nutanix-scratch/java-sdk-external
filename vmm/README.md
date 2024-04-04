@@ -111,7 +111,7 @@ public class Sample {
     // Configure the client
     // ...
     ImagesApi imagesApi = new ImagesApi(client);
-    String extId = "0cc4e7da-CdAA-fc89-b6Dd-0fC49b2FAeBF";
+    String extId = "ecEaABae-cFc1-FCeb-013b-23C8deCFEfEb";
     GetImageApiResponse getImageApiResponse = imagesApi.getImageById(extId);
   }
 }
@@ -147,7 +147,7 @@ public class Sample {
     // ...
     // perform GET call
     ImagesApi imagesApi = new ImagesApi(client);
-    String extId = "0cc4e7da-CdAA-fc89-b6Dd-0fC49b2FAeBF";
+    String extId = "ecEaABae-cFc1-FCeb-013b-23C8deCFEfEb";
     GetImageApiResponse getImageApiResponse = imagesApi.getImageById(extId);
     // Extract E-Tag Header
     final String eTagHeader = ApiClient.getEtag(getImageApiResponse);
