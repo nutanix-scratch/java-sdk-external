@@ -111,7 +111,7 @@ public class Sample {
     // Configure the client
     // ...
     CategoriesApi categoriesApi = new CategoriesApi(client);
-    String extId = "4bf7bEFF-4aca-b2cC-d7DC-eeAE17DD3eA5";
+    String extId = "EC3fdFA7-76af-Bed0-06C0-FFfBf7C2fEcb";
     String null = "string_sample_data";
     GetCategoryApiResponse getCategoryApiResponse = categoriesApi.getCategoryById(extId, null);
   }
@@ -148,7 +148,7 @@ public class Sample {
     // ...
     // perform GET call
     CategoriesApi categoriesApi = new CategoriesApi(client);
-    String extId = "4bf7bEFF-4aca-b2cC-d7DC-eeAE17DD3eA5";
+    String extId = "EC3fdFA7-76af-Bed0-06C0-FFfBf7C2fEcb";
     String null = "string_sample_data";
     GetCategoryApiResponse getCategoryApiResponse = categoriesApi.getCategoryById(extId, null);
     // Extract E-Tag Header
