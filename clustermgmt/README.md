@@ -111,7 +111,7 @@ public class Sample {
     // Configure the client
     // ...
     ClustersApi clustersApi = new ClustersApi(client);
-    String extId = "f984dbfB-Fa25-823d-e4FE-E2B9eCC1FD64";
+    String extId = "EdBa2F40-3f5c-2bcb-a99f-ddcb0a01bcbe";
     GetClusterApiResponse getClusterApiResponse = clustersApi.getClusterById(extId);
   }
 }
@@ -147,7 +147,7 @@ public class Sample {
     // ...
     // perform GET call
     ClustersApi clustersApi = new ClustersApi(client);
-    String extId = "f984dbfB-Fa25-823d-e4FE-E2B9eCC1FD64";
+    String extId = "EdBa2F40-3f5c-2bcb-a99f-ddcb0a01bcbe";
     GetClusterApiResponse getClusterApiResponse = clustersApi.getClusterById(extId);
     // Extract E-Tag Header
     final String eTagHeader = ApiClient.getEtag(getClusterApiResponse);
