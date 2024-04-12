@@ -111,7 +111,7 @@ public class Sample {
     // Configure the client
     // ...
     CertificateAuthenticationProvidersApi certificateAuthenticationProvidersApi = new CertificateAuthenticationProvidersApi(client);
-    String extId = "CecC7FDe-d2Ce-7DEB-aDF1-beeD6f3De6Ba";
+    String extId = "9c8E9Add-bDfF-b0fB-f623-BeDCB9bab30a";
     GetCertAuthProviderApiResponse getCertAuthProviderApiResponse = certificateAuthenticationProvidersApi.getCertAuthProviderById(extId);
   }
 }
@@ -147,7 +147,7 @@ public class Sample {
     // ...
     // perform GET call
     CertificateAuthenticationProvidersApi certificateAuthenticationProvidersApi = new CertificateAuthenticationProvidersApi(client);
-    String extId = "CecC7FDe-d2Ce-7DEB-aDF1-beeD6f3De6Ba";
+    String extId = "9c8E9Add-bDfF-b0fB-f623-BeDCB9bab30a";
     GetCertAuthProviderApiResponse getCertAuthProviderApiResponse = certificateAuthenticationProvidersApi.getCertAuthProviderById(extId);
     // Extract E-Tag Header
     final String eTagHeader = ApiClient.getEtag(getCertAuthProviderApiResponse);
